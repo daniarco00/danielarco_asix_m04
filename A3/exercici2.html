@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8"> <!-- Establece el conjunto de caracteres como UTF-8 para soportar caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsiva, adaptándose a diferentes tamaños de pantalla -->
+    <title>Exercici 2 - Formulari</title> <!-- Título de la página que se mostrará en la pestaña del navegador -->
+
+    <!-- Estilos CSS internos para el diseño del formulario -->
+    <style>
+        /* Establece la fuente predeterminada */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Define el contenedor del formulario, ajustando el tamaño y los márgenes */
+        .form-container {
+            width: 300px; /* Ancho del formulario */
+            margin: 50px auto; /* Margen superior de 50px, centrado horizontalmente */
+            padding: 20px; /* Espacio interno del contenedor */
+            border: 1px solid #ccc; /* Borde gris claro alrededor del contenedor */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+
+        /* Estilo para los elementos de etiqueta (<label>) */
+        label {
+            display: block; /* Hace que las etiquetas ocupen todo el ancho disponible */
+            margin-bottom: 8px; /* Espacio debajo de cada etiqueta */
+        }
+
+        /* Estilo para los campos de texto y el área de texto */
+        input[type="text"], input[type="email"], textarea {
+            width: 100%; /* El campo ocupa todo el ancho disponible del contenedor */
+            padding: 8px; /* Espaciado interno dentro del campo */
+            margin-bottom: 12px; /* Espacio debajo de cada campo */
+            border: 1px solid #ccc; /* Borde gris claro para los campos */
+            border-radius: 4px; /* Bordes redondeados */
+        }
+
+        /* Estilo para el botón de envío */
+        input[type="submit"] {
+            padding: 10px 20px; /* Espaciado interno en los lados y arriba/abajo del botón */
+            background-color: #007BFF; /* Color de fondo azul */
+            color: white; /* Color de texto blanco */
+            border: none; /* Sin borde */
+            border-radius: 4px; /* Bordes redondeados */
+            cursor: pointer; /* Cambia el cursor a una mano cuando el usuario pasa por encima */
+        }
+
+        /* Cambia el color del botón cuando el usuario pasa el ratón por encima */
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Azul más oscuro al hacer hover */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Contenedor principal del formulario -->
+<div class="form-container">
+    <!-- Formulario HTML -->
+    <!-- El atributo "action" indica dónde se enviarán los datos del formulario (en este caso está vacío "#") -->
+    <!-- El atributo "method" indica el método HTTP utilizado para enviar el formulario, en este caso POST -->
+    <form action="#" method="post">
+        <!-- Campo de texto para el nombre -->
+        <label for="nom">Nom:</label> <!-- Etiqueta para el campo de nombre -->
+        <input type="text" id="nom" name="nom" required> <!-- Campo de entrada para el nombre, marcado como obligatorio (required) -->
+
+        <!-- Campo de correo electrónico -->
+        <label for="email">Correu electrònic:</label> <!-- Etiqueta para el campo de correo electrónico -->
+        <input type="email" id="email" name="email" required> <!-- Campo de entrada para correo, tipo "email" para validación automática -->
+
+        <!-- Área de texto para el mensaje -->
+        <label for="missatge">Missatge:</label> <!-- Etiqueta para el campo de mensaje -->
+        <textarea id="missatge" name="missatge" rows="4" required></textarea> <!-- Campo de área de texto con 4 filas de altura, obligatorio -->
+
+        <!-- Botón para enviar el formulario -->
+        <input type="submit" value="Enviar"> <!-- Botón de envío con el texto "Enviar" -->
+    </form>
+</div>
+
+</body>
+</html>

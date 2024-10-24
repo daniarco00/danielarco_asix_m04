@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definir el tipus global per a ingredient -->
+  <xs:complexType name="ingredientType">
+    <xs:sequence>
+      <xs:element name="quantitat" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="valor" type="xs:integer"/>
+            <xs:element name="mesura" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="nom" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Definir el tipus global per a recepta -->
+  <xs:complexType name="receptaType">
+    <xs:sequence>
+      <xs:element name="nom" type="xs:string"/>
+      <xs:element name="ingredients" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ingredient" type="ingredientType" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="passos">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="pas" type="xs:string" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="dificultat" type="xs:integer" use="required"/>
+  </xs:complexType>
+
+  <!-- Definir l'element arrel receptes -->
+  <xs:element name="receptes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="recepta" type="receptaType" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

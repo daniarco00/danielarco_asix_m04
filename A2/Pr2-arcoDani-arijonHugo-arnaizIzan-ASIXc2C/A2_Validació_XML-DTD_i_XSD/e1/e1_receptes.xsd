@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definir el tipus complex global per a recepta -->
+  <xs:complexType name="receptaType">
+    <xs:sequence>
+      <xs:element name="nom" type="xs:string"/>
+      <xs:element name="passos">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="pas" type="xs:string" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="dificultat" type="xs:integer" use="required"/>
+  </xs:complexType>
+
+  <!-- Definir l'element arrel receptes -->
+  <xs:element name="receptes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="recepta" type="receptaType" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
