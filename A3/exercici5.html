@@ -1,3 +1,8 @@
+<!-- Haz un html que contenga una tabla con 3 filas y 2 columnas. En la primera fila, en la primera columna, pon el nombre de una persona. En la segunda fila, 
+en la primera columna, pon el teléfono de la persona. En la tercera fila, en la primera columna, pon la dirección de la persona. En la primera fila,
+ en la segunda columna, pon el nombre de otra persona. En la segunda fila, en la segunda columna, pon el teléfono de la otra persona. En la tercera fila, 
+ en la segunda columna, pon la dirección de la otra persona. Añade un margen de 20px a la tabla. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +19,7 @@
             border: 1px solid black;
             border-collapse: collapse;
             padding: 5px;
+            margin: 20px;
         }
 
         .container {
@@ -58,36 +64,18 @@
     </table>
 
     <!-- Segunda tabla -->
-    <table style="margin-top: 20px;">
+    <table>
         <tr>
-            <th>First Name:</th>
-            <td>Bill Gates</td>
+            <td>Persona 1</td>
+            <td>Persona 2</td>
         </tr>
         <tr>
-            <th>Telephone:</th>
             <td>555 77 854</td>
-        </tr>
-        <tr>
-            <td></td>
             <td>555 77 855</td>
         </tr>
+        <tr>
+            <td>Microsoft</td>
+            <td>Apple</td>
+        </tr>
     </table>
-
-    <!-- Contenedor con celdas alineadas -->
-    <div class="container">
-        <div>First</div>
-        <div>Row</div>
-        <div></div>
-        <div>Second</div>
-        <div>Row</div>
-        <div></div>
-        <div>First</div>
-        <div class="checkmark">✔</div>
-        <div>Row</div>
-        <div>Second</div>
-        <div class="checkmark">✔</div>
-        <div>Row</div>
-    </div>
-
-</body>
 </html>
