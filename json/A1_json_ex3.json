@@ -1,0 +1,23 @@
+[
+    {
+    "nombre": "Azul sobre blanco",
+    "tipo": "cuadro abstracto",
+    "autor": "Pere Aguilar",
+    "año": 2014,
+    "tecnica": "óleo"
+    },
+    {
+    "nombre": "Gris oscuro",
+    "tipo": "cuadro abstracto",
+    "autor": "Pere Aguilar",
+    "año": 2010,
+    "tecnica": "acuarela"
+    },
+    {
+    "nombre": "Camino largo",
+    "tipo": "escultura",
+    "autor": "Marta Lambert",
+    "año": 1981,
+    "material": "mármol"
+    }
+    ]

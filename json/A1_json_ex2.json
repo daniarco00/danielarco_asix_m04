@@ -1,37 +1,20 @@
 [
     {
-        "widget":[
-            {
-            "debug": "on",
-            "window":[
-                {
-                    "title": "Sample Konfabulator",
-                    "name": "main_window",
-                    "widht": "500",
-                    "height": "500"
-                }
-            ],
-            "image":[
-                {
-                "src": "Images/Sun.png",
-                "name": "Sun1",
-                "h0ffset": "250",
-                "v0ffset": "250",
-                "alignement": "center"
-                }
-            ],
-            "text":[
-                {
-                "data": "click here",
-                "size": "36",
-                "style": "bold",
-                "h0ffset": "250",
-                "v0ffset": "100",
-                "alignement": "center",
-                "onMouseuP": "sun1.opacity = (sun1.opacity / 100) * 90;"
-                }       
-                ]
-            }
-        ]
+    "nombre": "Bar Pasqual",
+    "tipo": "bar de tapas",
+    "direccion": "avenida diagonal 232",
+    "propietario": "Joan Alcover"
+    },
+    {
+    "nombre": "Restaurante Meravelles",
+    "tipo": "restaurante de menú",
+    "direccion": "Meridiana 111",
+    "propietario": "Maria Garcia"
+    },
+    {
+    "nombre": "Restaurante Racó de l'Avia",
+    "tipo": "restaurante de menú",
+    "direccion": "Av. Roma 221",
+    "propietario": "Alba Puig"
     }
-]
+    ]
