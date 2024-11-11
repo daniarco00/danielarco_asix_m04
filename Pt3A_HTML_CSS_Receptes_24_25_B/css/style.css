@@ -1,0 +1,110 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    color: #8A8070;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #8A8070;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header p {
+    font-style: italic;
+    color: #7ABA96;
+}
+
+/* Menú de navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #8A8070;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #7ABA96;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Contenido */
+main {
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    padding: 20px;
+}
+
+.about, .subscribe {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about img {
+    width: 100px; /* Ajusta el tamaño como prefieras */
+    height: 100px; /* Para que sea un círculo, ancho y alto deben ser iguales */
+    border-radius: 50%; /* Esto crea el efecto circular */
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+    margin-bottom: 10px;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 75%;
+}
+
+.recipes article {
+    border: 1px solid #8A8070;
+    padding: 10px;
+    text-align: center;
+}
+
+.recipes article h2 a {
+    color: #000;
+    text-decoration: none;
+}
+
+.recipes article h2 a:hover {
+    color: #7ABA96;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
